@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# <img src="https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png" alt="Laravel Logo" width="50" height="50"/> Meico Solar - Consumo API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Carlos Andres Balaguera Caicedo - API- React-JWT
 
-## Available Scripts
+## Prueba realizada del 26/08/2024 al 26/08/2024
 
-In the project directory, you can run:
+Bienvenido. Esta es la prueba técnica para validar mis conocimientos y fortalezas en el mundo del Fronted utilizando React, demostrando así mi capacidad de generar consumo api, estructuracion del procto, clean code, y demás para el mundo de Meico Solar.
 
-### `npm start`
+### Implementaciones:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Estructura de Carpetas:**
+  - **`auth/`**: Contiene los componentes relacionados con la autenticación (`Login.js`, `Register.js`) y sus estilos .
+  - **`tasks/`**: Contiene los componentes para la gestión de tareas, incluyendo `NewTaskModal`, `EditTaskModal`, `TaskDetailModal` y sus estilos . 
+  -  Incluye utilidades y configuraciones, como `api.js` para la configuración de la API.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Actualizaciones de Componentes:**
+  - **`Login.js` y `Register.js`**: Moved to `auth/` with corresponding styles in `auth.css`.
+  - **`Tasks.js`**: Updated to support 5-item pagination and improved card design in `tasks.css`.
+  - **`NewTaskModal`, `EditTaskModal`, `TaskDetailModal`**: Moved to `tasks/` and updated for better functionality.
 
-### `npm test`
+- **Diseño y Funcionalidades:**
+  - **Diseño Mejorado**: Actualización en el diseño de las tarjetas de tareas para una mejor presentación visual.
+  - **Paginación**: Modificado para mostrar 5 elementos por página.
+  - **Modales**: Implementación de modales para crear, editar y ver detalles de tareas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## INSTRUCCIONES
+Se consume la api creada en Laravel 9 ( https://github.com/ccaicedo22/Crud_Api_Laravel_Auth_JWT.git )
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalación:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.Descarga e instala la API de laravel, las instrucciones están dentro del archivo README.md del repositorio.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2.Clonar o descargar este proyecto
 
-### `npm run eject`
+3.Acceder mediante terminal a la carpeta del proyecto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4.Instalar las dependencias utilizadas:  npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5.Ejecutar el servidor npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6.Ver en el navegador el proyecto, por lo general la url es: http://localhost:3000/ 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Tecnologías Utilizadas
+1.React: Librería para construir interfaces de usuario.
+2.Axios: Cliente HTTP para hacer peticiones a la API.
+3.SweetAlert2: Librería para mostrar alertas y notificaciones.
+4.React Router: Manejo de rutas en la aplicación.
+5.Autenticación JWT: Autenticación basada en tokens JSON Web Token.
