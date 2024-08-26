@@ -1,0 +1,166 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.dashboard-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000; /* Asegura que el encabezado esté por encima del contenido principal */
+}
+
+.user-logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.user-logo-icon {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-align: left;
+  font-size: 16px;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1100; /* Asegura que el sidebar esté sobre el encabezado */
+  transition: transform 0.3s ease;
+  transform: translateX(0); /* Por defecto, el sidebar está completamente visible */
+}
+
+.sidebar.closed {
+  transform: translateX(-100%); /* Mueve el sidebar completamente fuera de la vista */
+}
+
+.sidebar-header {
+  text-align: center;
+}
+
+.sidebar-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sidebar-title {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Estilo general para el contenedor de la navegación */
+.sidebar-nav {
+  flex: 1; /* Ocupa el espacio restante en el sidebar */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre los ítems del menú */
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  display: flex;
+  width: 100%; /* Asegura que el <li> ocupe todo el ancho del sidebar */
+}
+
+.sidebar-nav a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgb(42, 42, 42);
+  padding: 15px;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Centra el texto */
+  font-size: 16px; /* Tamaño de fuente */
+  width: 100%; /* Asegura que el <a> ocupe todo el ancho del <li> */
+}
+
+.sidebar-nav a:hover {
+  background-color: #5bbbff; /* Color de fondo al pasar el ratón */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al pasar el ratón */
+}
+
+
+.sidebar-toggle {
+  position: fixed;
+  top: 50%;
+  left: 10px; /* Ajusta la posición para que sea visible */
+  transform: translateY(850%) rotate(90deg); /* Centrado verticalmente y rotado */
+  background-color: #060b0f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: 1200; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+.sidebar-toggle.open {
+  left: 250px; /* Ajustado para que el botón de toggle esté visible cuando el sidebar está abierto */
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  margin-top: 60px; /* Espacio para el encabezado */
+  margin-left: 250px; /* Deja espacio para el sidebar */
+}

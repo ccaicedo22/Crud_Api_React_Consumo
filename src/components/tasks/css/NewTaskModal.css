@@ -1,0 +1,109 @@
+/* Estilos para el modal */
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Ajusta el tamaño según lo necesario */
+    max-width: 500px; /* Tamaño máximo del modal */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Evita el desplazamiento horizontal */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Título del modal */
+  .modal h2 {
+    margin-top: 0;
+    font-size: 20px; /* Ajusta el tamaño del título */
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Formulario dentro del modal */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Estilos para los grupos de formulario */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Etiquetas del formulario */
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Campos de entrada del formulario */
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+  }
+  
+  /* Área de texto */
+  .form-group textarea {
+    resize: vertical;
+    min-height: 80px; /* Ajusta la altura mínima del área de texto */
+  }
+  
+  /* Contenedor para los botones */
+  .buttons-container {
+    display: flex;
+    justify-content: flex-end; /* Alinea los botones a la derecha */
+    gap: 10px; /* Espacio entre los botones */
+  }
+  
+  /* Botón de envío */
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Botón de cerrar */
+  button.cancel-btn {
+    background-color: #ffc107; /* Color amarillo claro */
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.cancel-btn:hover {
+    background-color: #e0a800; /* Color amarillo más oscuro para hover */
+  }
+  

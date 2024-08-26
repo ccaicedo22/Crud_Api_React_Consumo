@@ -1,0 +1,46 @@
+.modal {
+    /* Ajusta el tamaño y otros estilos del modal */
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .overlay {
+    /* Estilo del overlay del modal */
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-group p {
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+  }
+  
+  .ok-btn {
+    background-color: #f0ad4e; /* Color amarillo claro */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .ok-btn:hover {
+    background-color: #ec971f; /* Color amarillo más oscuro al pasar el mouse */
+  }
+  
